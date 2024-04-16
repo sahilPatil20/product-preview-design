@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Preview</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body class="bg-light">
-    
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
     <div class="m-5 p-5 bg-white">
+      <div class="d-flex">
         <div class="d-flex">
-            <div class="d-flex">
-                <div class="">
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false" alt="img-1" class="preview-img p-2 border border-end-0">
-                    <br>
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/2/7/h/-original-imagtc5fyznz42bx.jpeg?q=70&crop=false" alt="img-2" class="preview-img p-2 border border-top-0 border-end-0">
-                    <br>
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/v/k/-original-imagtc5fx9jzazdy.jpeg?q=70&crop=false" alt="img-3" class="preview-img p-2 border border-top-0 border-end-0">
-                    <br>
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/h/z/-original-imagtc5fbxefnjtj.jpeg?q=70&crop=false" alt="img-4" class="preview-img p-2 border border-top-0 border-end-0">
-                    <br>
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/s/1/-original-imagtc5fxxhhgtrz.jpeg?q=70&crop=false" alt="img-5" class="preview-img p-2 border border-top-0 border-end-0">
-                </div>
-                <div>
-                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false" alt="img-1" class="main-img border p-4">
-                    <br>
-                    <div class="mt-2">
-                        <button class="btn-cart border text-white fw-medium rounded-1 ms-1">ADD TO CART</button>
-                        <button class="btn-buy border text-white fw-medium rounded-1">BUY NOW</button>
-                    </div>
-                </div>
+          <div class="">
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
+              alt="img-1"
+              class="preview-img p-2 border border-end-0"
+              onmouseover="preview('https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false')"
+            />
+            <br />
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/2/7/h/-original-imagtc5fyznz42bx.jpeg?q=70&crop=false"
+              alt="img-2"
+              class="preview-img p-2 border border-top-0 border-end-0"
+              onmouseover="preview('https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/2/7/h/-original-imagtc5fyznz42bx.jpeg?q=70&crop=false')"
+            />
+            <br />
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/v/k/-original-imagtc5fx9jzazdy.jpeg?q=70&crop=false"
+              alt="img-3"
+              class="preview-img p-2 border border-top-0 border-end-0"
+              onmouseover="preview('https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/v/k/-original-imagtc5fx9jzazdy.jpeg?q=70&crop=false')"
+            />
+            <br />
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/h/z/-original-imagtc5fbxefnjtj.jpeg?q=70&crop=false"
+              alt="img-4"
+              class="preview-img p-2 border border-top-0 border-end-0"
+              onmouseover="preview('https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/h/z/-original-imagtc5fbxefnjtj.jpeg?q=70&crop=false')"
+            />
+            <br />
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/s/1/-original-imagtc5fxxhhgtrz.jpeg?q=70&crop=false"
+              alt="img-5"
+              class="preview-img p-2 border border-top-0 border-end-0"
+              onmouseover="preview('https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/s/1/-original-imagtc5fxxhhgtrz.jpeg?q=70&crop=false')"
+            />
+          </div>
+          <div>
+            <img
+              src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
+              alt="img-1"
+              class="main-img border p-5"
+              id="main-product-img"
+            />
+            <br />
+            <div class="mt-2 ms-4 ps-1">
+              <button class="btn-cart border text-white fw-medium rounded-1">
+                ADD TO CART
+              </button>
+              <button class="btn-buy border text-white fw-medium rounded-1">
+                BUY NOW
+              </button>
             </div>
-
-            <div class="ms-4">
-                <p>
-                    <span class="fs-4">Apple iPhone 15 (Blue, 128 GB)</span> 
-                    <br>
-                    <span class="badge rounded-5 text-bg-success">4.6</span>
-                    <span class="text-secondary ms-2">23,504 Ratings & 1,608 Reviews</span>
-                </p>
-                <p>
-                    <span class="fw-semibold fs-3">₹71,999</span> 
-                    <del class="ms-2 text-secondary">₹79,900</del>
-                    <span class="ms-2 text-success fw-medium">9% off</span>
-                    <br>
-                    <span>+ ₹99 Secured Packaging Fee</span>
-                </p>
-                <p>
-                    <span class="fw-semibold">Available offers</span>
-                    <br>
-                    <span> <img src="./img/badge.png" alt="badge" width="18px"> </span>
-                    <span class="fw-medium">Bank Offer</span>
-                    <span>5% Cashback on Flipkart Axis Bank Card</span>
-                    <br>
-                    <span> <img src="./img/badge.png" alt="badge" width="18px"> </span>
-                    <span class="fw-medium">Bank Offer</span>
-                    <span>₹2000 Off On SBI Credit Card Transactions</span>
-                    <br>
-                    <span> <img src="./img/badge.png" alt="badge" width="18px"> </span>
-                    <span class="fw-medium">Bank Offer</span>
-                    <span>₹4000 Off On SBI Credit Card Transactions</span>
-                    <br>
-                    <span> <img src="./img/badge.png" alt="badge" width="18px"> </span>
-                    <span class="fw-medium">Special Price</span>
-                    <span>Get extra ₹5901 off (price inclusive of cashback/coupon)</span>
-                    <br>
-                    <span class="text-primary fw-semibold">View 18 more offers</span>
-                </p>
-            </div>
+          </div>
         </div>
 
+        <div class="ms-4">
+          <p>
+            <span class="fs-4">Apple iPhone 15 (Blue, 128 GB)</span>
+            <br />
+            <span class="badge rounded-5 text-bg-success">4.6</span>
+            <span class="text-secondary ms-2"
+              >23,504 Ratings & 1,608 Reviews</span
+            >
+          </p>
+          <p>
+            <span class="fw-semibold fs-3">₹71,999</span>
+            <del class="ms-2 text-secondary">₹79,900</del>
+            <span class="ms-2 text-success fw-medium">9% off</span>
+            <br />
+            <span>+ ₹99 Secured Packaging Fee</span>
+          </p>
+          <p>
+            <span class="fw-semibold">Available offers</span>
+            <br />
+            <span>
+              <img src="./img/badge.png" alt="badge" width="18px" />
+            </span>
+            <span class="fw-medium">Bank Offer</span>
+            <span>5% Cashback on Flipkart Axis Bank Card</span>
+            <br />
+            <span>
+              <img src="./img/badge.png" alt="badge" width="18px" />
+            </span>
+            <span class="fw-medium">Bank Offer</span>
+            <span>₹2000 Off On SBI Credit Card Transactions</span>
+            <br />
+            <span>
+              <img src="./img/badge.png" alt="badge" width="18px" />
+            </span>
+            <span class="fw-medium">Bank Offer</span>
+            <span>₹4000 Off On SBI Credit Card Transactions</span>
+            <br />
+            <span>
+              <img src="./img/badge.png" alt="badge" width="18px" />
+            </span>
+            <span class="fw-medium">Special Price</span>
+            <span
+              >Get extra ₹5901 off (price inclusive of cashback/coupon)</span
+            >
+            <br />
+            <span class="text-primary fw-semibold">View 18 more offers</span>
+          </p>
+        </div>
+      </div>
     </div>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script>
+      function preview(imgName) {
+        const mainImg = document.getElementById("main-product-img");
+        mainImg.src = imgName;
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
